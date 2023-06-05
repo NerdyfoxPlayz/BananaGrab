@@ -5,15 +5,14 @@ pygame.init()
 pygame.mixer.init()
 
 #importing files stuff
-monke_image_import = pygame.image.load(os.path.join('Assets', 'monke.png'))
+monke_image_import = pygame.image.load('monke.png')
 monke_img = pygame.transform.scale(monke_image_import, (300, 300))
 
-banana_image_import = pygame.image.load(os.path.join('Assets', 'banana.png'))
+banana_image_import = pygame.image.load('banana.png')
 banana_img = pygame.transform.scale(banana_image_import, (250, 250))
+munch = pygame.mixer.Sound('munch.wav')
 
-munch = pygame.mixer.Sound(os.path.join('Assets', 'munch.wav'))
-
-
+                           
 
 #Pygame stuff
 WIDTH, HEIGHT = 1080, 2400
